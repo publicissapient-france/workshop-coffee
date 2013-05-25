@@ -237,8 +237,8 @@ test 'The class Projectile has a method move, which remove 10 to y coordinate', 
   ok projectile?.move?, 'projectile must have a method move'
   equal projectile?.move?.length, 0, 'the method move must not take any parameter'
   projectile?.move?()
-  equal projectile?.y, 23, 'projectile.x must be equal to 23'
-  equal projectile?.x, 22, 'projectile.y must be equal to 22'
+  equal projectile?.x, 22, 'projectile.x must be equal to 22'
+  equal projectile?.y, 23, 'projectile.y must be equal to 23'
 
 test 'There must be a method hasCollisionWith in the class Projectile, colliding at left', ->
   projectile = new Projectile?(100, 100)
