@@ -2,7 +2,7 @@ h1. Coffee-script Hands on
 
 h2. Initialiser le projet
 
-* Clonez le projet github "https://github.com/blemoine/xke-coffee":https://github.com/blemoine/xke-coffee
+* Clonez le projet github "https://github.com/xebia-france/workshop-coffee":https://github.com/xebia-france/workshop-coffee
 * Ouvrez dans Firefox le fichier spaceinvaders.html pour voir les test et la réalité de votre implémentation !
 * Si vous désirez utiliser un autre navigateur que Firefox, vous pouvez utiliser le serveur node lançable par la commande node server.js et vous connectez sur http://localhost:3000/spaceinvaders.html
 * Regardez le fichier model.test.coffee pour voir quelles sont les attentes.
