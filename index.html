@@ -1,74 +1,217 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>COFFEE</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Workshop-coffee : " />
+    <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="pp.css"/>
+    <script src="jquery.min.js"></script>
 
-    <title>Workshop-coffee</title>
-  </head>
+</head>
+<body>
+<div id="impress">
+    <div id="logo" class="step slide section" data-x="500" data-y="0" data-z="-1000">
+        <div class="header">
+            <span>1/7</span>
+        </div>
+        <br/>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/xebia-france/workshop-coffee">View on GitHub</a>
-
-          <h1 id="project_title">Workshop-coffee</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/xebia-france/workshop-coffee/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/xebia-france/workshop-coffee/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+        <div class="logo-wrapper">
+            <img src="logo.png" class="logo-img"/>
+        </div>
+        <div class="footer">
+            <p>Jean-Laurent de Morlhon, Mathieu Breton et Benoit Lemoine, le 27 mai 2013</p>
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <div id="why" class="step slide section" data-x="0" data-y="1000">
+        <div class="header">
+            <span>2/7</span>
+        </div>
+        <br/>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <h1>Pourquoi Coffeescript&nbsp;?</h1>
+        <br/>
+        <ul class="bulletPoint">
+            <li class="mainLi">Javascript est déjà partout</li>
+            <li class="mainLi">Mais Javascript est verbeux...</li>
+            <li class="mainLi">...et pas toujours consistant</li>
+        </ul>
+        <div class="exemple">
+            <pre><code>
+(function() {
+    if ([] == 0) {
+        console.log(":(");
+    }
+})();
+            </code></pre>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Workshop-coffee maintained by <a href="https://github.com/xebia-france">xebia-france</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+
+
+
+    <div id="what" class="step slide section" data-x="1200" data-y="1000">
+        <div class="header">
+            <span>3/7</span>
+        </div>
+        <br/>
+
+        <h1>Coffeescript, qu'est ce donc&nbsp;?</h1>
+        <br/>
+        <ul class="bulletPoint">
+            <li class=" mainLi">Un langage avec une syntaxe inspirée de ruby et python (entre autre)</li>
+            <li class="mainLi">Corrigeant les problèmes majeurs de Javascript (verbosité et consistance)</li>
+            <li class="mainLi">Compilant en Javascript ...</li>
+            <li class="mainLi">... avec une sortie propre et passant la validation JS Lint</li>
+        </ul>
+        <div class="exemple">
+            <div class="col col1">
+<pre><code>
+square = (x) -> x * x
+
+if [] != 0
+   console.log '\o/'
+            </code></pre>
+            </div>
+            <div class="col col2">
+<pre><code>
+var square;
+square = function(x) {
+    return x * x;
+};
+if ([] !== 0) {
+    console.log('\o/');
+}
+
+            </code></pre>
+            </div>
+        </div>
     </div>
 
-    
+    <div id="how" class="step slide section" data-x="1200" data-y="2000">
+        <div class="header">
+            <span>4/7</span>
+        </div>
+        <br/>
 
-  </body>
+        <h1>Coffeescript, comment ca marche&nbsp;?</h1>
+        <br/>
+        <ul class="bulletPoint">
+            <li class="mainLi">Compilation avec l'utilitaire fourni par le package <i>coffee-script</i></li>
+            <li class="mainLi">Compilation "en continue" avec l'option <code>--watch</code></li>
+            <li class="mainLi">Utilisation de librairies tierces (Wro, jawr, etc.)</li>
+            <li class="mainLi">Compilation en direct dans le navigateur en incluant un script</li>
+            <li class="mainLi">En copiant/collant le code dans sur le site de coffee&nbsp;: http://coffeescript.org</li>
+        </ul>
+    </div>
+
+    <div id="infos" class="step slide section" data-x="0" data-y="2000">
+        <div class="header">
+            <span>5/7</span>
+        </div>
+        <br/>
+
+        <h1>Quelques informations supplémentaires</h1>
+        <br>
+        <ul class="bulletPoint">
+            <li class="mainLi">Coffeescript utilise les API Javascript</li>
+            <li class="mainLi">Coffeescript utilise l'indentation comme syntaxe</li>
+            <li class="mainLi">les fonctions se définissent avec <code>(param) -> corps</code></li>
+            <li class="mainLi">les attributs d'objets peuvent être récupérés avec <code>@</code></li>
+            <li class="mainLi">le mot clef <code>return</code> est optionnel</li>
+            <li class="mainLi">les <code>;</code> sont optionnels</li>
+            <li class="mainLi">les parenthèses sont (la plupart du temps) optionnels</li>
+        </ul>
+
+    </div>
+
+    <div id="exemple" class="step slide section" data-x="700" data-y="3000" data-z="0">
+        <div class="header">
+            <span>6/7</span>
+        </div>
+        <br/>
+
+        <h1>Un exemple simple</h1>
+        <br/>
+        <div class="exemple">
+            <pre><code>
+class Hero
+  constructor: (@secretIdentity) ->
+
+  humThemeSong: ->
+    if(@secretIdentity == "Bruce Wayne")
+      Array(16).join(@secretIdentity - 1)
+     else
+      "???"
+
+
+batman = new Hero "Bruce Wayne"
+console.log batman.humThemeSong()
+
+            </code></pre>
+         </div>
+    </div>
+
+    <div id="kata" class="step slide section" data-x="800" data-y="4000" data-z="1000">
+        <div class="header">
+            <span>6/7</span>
+        </div>
+        <br/>
+
+        <h1>Et maintenant kata&nbsp;!</h1>
+        <br/>
+
+        <div class="batman-wrapper">
+            <img src="Batman.png" />
+        </div>
+
+    </div>
+
+    <div id="overview" class="step" data-x="2000" data-y="2000" data-scale="9">
+    </div>
+</div>
+</body>
+<script src="impress.js"></script>
+
+<script>
+    $(function () {
+        impress().init();
+
+        $(document).keyup(function (event) {
+            var enterKeyCode = 13;
+            var eventKey = event.keyCode;
+            if (eventKey != enterKeyCode) {
+                return;
+            }
+
+            $('.future .displayable, .past .displayable').fadeOut();
+
+            var displayables = $('.present .displayable');
+            var lastVisible = null;
+
+            var nextDisplayable = null;
+            $.each(displayables, function () {
+                if ($(this).is(':visible')) {
+                    lastVisible = $(this);
+                    nextDisplayable = null;
+                } else {
+                    if (nextDisplayable == null && $(this).is(':hidden')) {
+                        nextDisplayable = $(this);
+                    }
+                }
+            });
+            if (lastVisible == undefined) {
+                nextDisplayable = $('.present .displayable:hidden').first();
+            }
+            if (nextDisplayable != null && nextDisplayable.length > 0) {
+                nextDisplayable.fadeIn();
+            }
+        });
+
+    });
+
+</script>
+
 </html>
