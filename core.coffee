@@ -130,7 +130,7 @@ class IngameState extends State
 
           hasCollision = false
           @aliens.forEach (alien) =>
-            if !hasCollision && projectile.hasCollisionWith(alien)
+            if !hasCollision && projectile.hasCollisionWith?(alien)
               alien.decreaseLive()
               hasCollision = true
 
