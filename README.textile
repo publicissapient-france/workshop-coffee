@@ -1,0 +1,80 @@
+h1. Coffee-script Hands on
+
+h2. Initialiser le projet
+
+* Clonez le projet github "https://github.com/blemoine/xke-coffee":https://github.com/blemoine/xke-coffee
+* Ouvrez dans Firefox le fichier spaceinvaders.html pour voir les test et la réalité de votre implémentation !
+* Si vous désirez utiliser un autre navigateur que Firefox, vous pouvez utiliser le serveur node lançable par la commande node server.js et vous connectez sur http://localhost:3000/spaceinvaders.html
+* Regardez le fichier model.test.coffee pour voir quelles sont les attentes.
+* Editez le fichier model.coffee pour donner vie à votre programme.
+* Ressources utiles :
+** Le site de Coffee-script "http://coffeescript.org/":http://coffeescript.org/
+** Le Mozilla developper network "https://developer.mozilla.org/":https://developer.mozilla.org/fr/
+
+
+h2. Contexte
+
+Les extra-terrestres sont là, et vous êtes seul à pouvoir créer une arme permettant de les détruire !
+Vous pouvez ouvrir le fichier spaceinvaders.html ; mais vous constaterez qu'en l'état, vous ne pouvez pas faire grand chose d'autre qu'admirer le vide de l'espace !
+
+
+h3. Le joueur
+
+La première étape va consister à créer la classe @Player@. Les tests unitaires vous guideront dans sa création, la seule
+consigne particulière étant d'implémenter la méthode @formattedScore@ avec de l'interpolation "http://coffeescript.org/#strings":http://coffeescript.org/#strings
+
+h3. Le vaisseau
+
+Il est temps maintenant de créer un vaisseau de façon à lutter efficacement contre l'invasion.
+
+Pour cela, il faudra créer la classe @Ship@ en se laissant guider par les tests unitaires.
+
+Une fois réalisé, vous pouvez retourner sur la page spaceinvaders.html, afin de tester en direct que votre vaisseau est manoeuvrable.
+
+
+h3. Alien !
+
+Malheureusement les aliens sont invisibles, mais vous SAVEZ qu'ils sont là. Et vous allez le prouver !
+
+Implémentez la classe @Alien@ en suivant les tests unitaires.
+
+Une fois réalisé, vous pouvez retourner sur la page spaceinvaders.html, et constater que vous aviez raison, ils sont là !
+
+
+h3. Very Bad Alien
+
+Mais, vous le sentez, les aliens ne sont pas ce qu'ils semblent, et ils ont une autre forme.
+
+Implémentez la classe @VeryBadAlien@ en suivant les tests unitaires. Essayez d'implémenter la méthode @mutates@ avec un for compréhension "http://coffeescript.org/#loops":http://coffeescript.org/#loops
+
+Retournez voir spaceinvaders.html ; et attendez quelques secondes, les aliens muteront !
+
+
+h3. Les armes : la bombe !
+
+Il est temps de lutter efficacement contre les aliens, et de développer des armes.
+
+Implémentez les tests unitaires correspondant à la méthode @destroyAliens@ en essayant de le faire avec des ranges "http://coffeescript.org/#slices":http://coffeescript.org/#slices
+
+Malheureusement, la bombe implémentée, déclenchable en appuyant sur Return, fini par détruire votre vaisseau après quelques utilisations.
+
+
+h3. Les armes : le canon laser
+
+Il va donc falloir créer une arme utilisable sur le plus long terme, même si un peu moins puissante.
+
+Implémentez la classe @Projectile@ en suivant les tests unitaires.
+
+Testez finalement spaceinvaders.html. Vous voilà à même de lutter efficacement en tirant des lasers avec la touche espace.
+
+
+
+h2. Remerciements spéciaux
+
+Je remercie camille@finandsys.com pour la réalisation des sprites permettant d'afficher de magnifiques images plutôt que des rectangles verts fluos.
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPACE INVADERS</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/coffee-script.js"></script>
+
+    <link rel="stylesheet" href="css/spaceinvader.css">
+    <script type="text/coffeescript" src="core.coffee"></script>
+    <script type="text/coffeescript" src="model.coffee"></script>
+
+    <!-- Librairies de test -->
+    <link rel="stylesheet" href="css/qunit.css">
+    <script src="js/qunit.js"></script>
+    <script src="model.test.coffee" type="text/coffeescript"></script>
+</head>
+<body>
+<div id="qunit"></div>
+<div id="board-wrapper">
+    <div id="information-wrapper">
+        Score: <span id="score">0</span>
+    </div>
+    <canvas id="board"></canvas>
+</div>
+
+</body>
+</html>

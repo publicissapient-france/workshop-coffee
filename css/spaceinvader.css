@@ -1,0 +1,30 @@
+#board {
+    border: 1px solid black;
+}
+
+#score {
+    width: 200px;
+}
+
+#board-wrapper {
+    display: inline-block;
+    width: 650px;
+    position: absolute;
+    right: 0;
+}
+
+#qunit {
+    display: inline-block;
+
+    position: absolute;
+    left: 0;
+    right: 660px;
+}
+
+#qunit-userAgent {
+    display:none;
+}
+
+.test-source {
+    display:none;
+}
