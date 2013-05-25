@@ -284,3 +284,9 @@ test 'There must be a method hasCollisionWith in the class Projectile, colliding
   ok projectile?.hasCollisionWith?(new Alien(100,
     109)), 'There must be a colision with an alien where top of projectile and bottom of the alien collide'
 
+$(->
+  setTimeout ->
+    if ($('#qunit-tests .fail:eq(0)').length > 0)
+      $('#qunit').animate({ scrollTop: $('#qunit-tests .fail:eq(0)').offset().top }, 100)
+  , 200
+)
