@@ -136,6 +136,11 @@ a, iframe, #impress {
     text-align: center;
 }
 
+.section #github-link{
+    text-align: center;
+    font-size: 52px;
+}
+
 .section li {
     padding: 15px 2px;
 }
